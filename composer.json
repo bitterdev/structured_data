@@ -1,0 +1,10 @@
+{
+  "name": "bitter/structured_data",
+  "type": "concrete5-package",
+  "description": "Structured Data is a Concrete CMS add-on that lets you easily add structured data to your website using a block-type, built-in JSON editor, and ready-to-use templates.",
+  "autoload": {
+    "psr-4": {
+      "Bitter\\StructuredData\\": "src/Bitter/StructuredData"
+    }
+  }
+}

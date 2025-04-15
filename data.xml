@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concrete5-cif version="1.0">
+    <blocktypes>
+        <blocktype handle="structured_data" package="structured_data"/>
+    </blocktypes>
+</concrete5-cif>
