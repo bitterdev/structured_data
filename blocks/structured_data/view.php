@@ -19,5 +19,7 @@ $c = Page::getCurrentPage();
         </div>
     </div>
 <?php } else { ?>
-    abc
+    <script type="application/ld+json">
+    <?php echo $json; ?>
+    </script>
 <?php } ?>

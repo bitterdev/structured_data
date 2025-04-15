@@ -22,4 +22,19 @@ class Controller extends BlockController
     {
         return t("Structured Data");
     }
+
+    public function add()
+    {
+        $this->setDefaults();
+    }
+
+    public function edit()
+    {
+        $this->setDefaults();
+    }
+
+    private function setDefaults()
+    {
+        $this->requireAsset("javascript", "jsoneditor");
+    }
 }
