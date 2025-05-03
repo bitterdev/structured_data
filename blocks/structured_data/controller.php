@@ -12,6 +12,7 @@ class Controller extends BlockController
     protected $btInterfaceWidth = 400;
     protected $btInterfaceHeight = 500;
     protected $btCacheBlockOutputLifetime = 300;
+    protected $btIgnorePageThemeGridFrameworkContainer = true;
 
     public function getBlockTypeDescription(): string
     {
