@@ -4,6 +4,7 @@ defined('C5_EXECUTE') or die('Access denied');
 
 use Concrete\Core\Support\Facade\Application;
 use Concrete\Core\Form\Service\Form;
+use Concrete\Core\View\View;
 
 /** @var string|null $json */
 
@@ -13,6 +14,12 @@ $app = Application::getFacadeApplication();
 /** @var Form $form */
 /** @noinspection PhpUnhandledExceptionInspection */
 $form = $app->make(Form::class);
+
+/** @noinspection PhpUnhandledExceptionInspection */
+View::element("dashboard/help_blocktypes", [], "structured_data");
+
+/** @noinspection PhpUnhandledExceptionInspection */
+View::element("dashboard/did_you_know", [], "structured_data");
 
 echo $form->textarea("json", $json, ["class" => "d-none"]);
 ?>
