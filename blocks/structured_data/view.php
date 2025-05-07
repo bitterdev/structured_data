@@ -15,7 +15,7 @@ $c = Page::getCurrentPage();
 <?php if (is_object($c) && $c->isEditMode()) { ?>
     <div class="ccm-edit-mode-disabled-item">
         <div style="padding: 8px;">
-            <?php echo t('Content disabled in edit mode.'); ?>
+            <?php echo t('Structured Data is disabled in edit mode.'); ?>
         </div>
     </div>
 <?php } else { ?>
